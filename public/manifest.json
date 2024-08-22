@@ -1,7 +1,7 @@
 {
   "name": "BikeTracer",
   "short_name": "BikeTracer",
-  "start_url": "/index.html",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#ffffff",
