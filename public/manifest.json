@@ -3,6 +3,7 @@
   "short_name": "BikeTracer",
   "start_url": "/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#ffffff",
   "theme_color": "#03C75A",
   "icons": [
