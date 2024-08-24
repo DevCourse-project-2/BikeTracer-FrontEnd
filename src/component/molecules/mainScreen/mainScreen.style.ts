@@ -25,6 +25,8 @@ export const searchBarDiv = styled.div`
   top: 24px;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1); /* 그림자 설정 */
   z-index: 10;
 `;
 

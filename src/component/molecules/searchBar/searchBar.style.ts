@@ -26,22 +26,32 @@ export const searchText = styled.input`
 
 export const alarmButton = styled.button`
   width: 30px;
-  height: 40px;
+  height: 30px;
   background-image: url('/notification.png');
   background-size: 45%;
   background-position: center;
   background-repeat: no-repeat;
   background-color: ${color.WHITE};
   border: none;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: ${color.GY[100]};
+  }
 `;
 
 export const menuButton = styled.button`
   width: 30px;
-  height: 40px;
+  height: 30px;
   background-image: url('/menu.png');
   background-size: 45%;
   background-position: center;
   background-repeat: no-repeat;
   background-color: ${color.WHITE};
   border: none;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: ${color.GY[100]};
+  }
 `;
