@@ -1,5 +1,11 @@
 const typo = {
   Main: {
+    Title: {
+      fontFamily: 'Pretendard',
+      fontSize: '22px',
+      fontWeight: 700,
+      lineHeight: '1.6',
+    },
     SemiBold: {
       fontFamily: 'Pretendard',
       fontSize: '18px',
