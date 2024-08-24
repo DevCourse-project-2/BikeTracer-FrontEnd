@@ -1,9 +1,11 @@
-import React from 'react';
+// import React from 'react';
+
+import MainScreen from '../../component/molecules/mainScreen/mainScreen';
 
 const MainPage = () => {
   return (
     <div>
-      <h1>메인 페이지</h1>
+      <MainScreen />
     </div>
   );
 };

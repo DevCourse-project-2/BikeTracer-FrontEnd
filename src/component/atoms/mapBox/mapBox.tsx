@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 declare global {
   interface Window {
@@ -6,12 +6,13 @@ declare global {
   }
 }
 
-const MapBox = () => {
+const MapBox: FC = () => {
   const [map, setMap] = useState<any>();
   const [markers, setMarkers] = useState<any>([]);
 
   const script = document.createElement('script');
-  script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=6efc5d53e0d072261207430bf39a239f&libraries=services&autoload=false`;
+  const serviceKey = import.meta.env.VITE_KAKAOMAP_JAVASCRIPT_SERVICE_KEY;
+  script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${serviceKey}&libraries=services&autoload=false`;
   script.async = true;
   document.body.appendChild(script);
 
@@ -76,7 +77,7 @@ const MapBox = () => {
 
   return (
     <>
-      <div id="map" style={{ width: '100vw', height: '100vh' }}></div>
+      <div id="map" style={{ width: '100%', height: '100%' }}></div>
     </>
   );
 };
