@@ -1,11 +1,9 @@
-import { FC } from 'react';
+import * as S from './registerCancleButton.style';
 
-import { StyledRegisterCancleButton } from './registerCancleButton.style';
-
-const RegisterCancleButton: FC = () => {
+const RegisterCancleButton = () => {
   return (
     <>
-      <StyledRegisterCancleButton>등록취소</StyledRegisterCancleButton>
+      <S.styledRegisterCancleButton>등록취소</S.styledRegisterCancleButton>
     </>
   );
 };

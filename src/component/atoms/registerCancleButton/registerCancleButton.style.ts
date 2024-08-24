@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import color from '../../../styles/color';
 import typo from '../../../styles/typo';
 
-export const StyledRegisterCancleButton = styled.button`
+export const styledRegisterCancleButton = styled.button`
   width: 304px;
   height: 40px;
   font: ${typo.Main.Body.SemiBold}

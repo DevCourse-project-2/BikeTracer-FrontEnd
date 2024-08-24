@@ -1,11 +1,9 @@
-import { FC } from 'react';
+import * as S from './registerButton.style';
 
-import { StyledRegisterButton } from './registerButton.style';
-
-const RegisterButton: FC = () => {
+const RegisterButton = () => {
   return (
     <>
-      <StyledRegisterButton>등록하기</StyledRegisterButton>
+      <S.styledRegisterButton>등록하기</S.styledRegisterButton>
     </>
   );
 };

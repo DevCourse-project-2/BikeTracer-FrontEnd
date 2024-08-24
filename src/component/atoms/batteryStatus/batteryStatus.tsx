@@ -1,8 +1,6 @@
-import { FC } from 'react';
+import * as S from './batteryStatus.styled';
 
-import { BatteryFill, StyledBatteryStatus } from './batteryStatus.styled';
-
-const BatteryStatus: FC = () => {
+const BatteryStatus = () => {
   // 대여소 정보를 전역 store에서 받아 사용
   const selectedStation = {
     num: 305,
@@ -12,9 +10,9 @@ const BatteryStatus: FC = () => {
 
   return (
     <>
-      <StyledBatteryStatus>
-        <BatteryFill residualRatio={selectedStation.residualRatio} />
-      </StyledBatteryStatus>
+      <S.styledBatteryStatus>
+        <S.batteryFill residualRatio={selectedStation.residualRatio} />
+      </S.styledBatteryStatus>
     </>
   );
 };

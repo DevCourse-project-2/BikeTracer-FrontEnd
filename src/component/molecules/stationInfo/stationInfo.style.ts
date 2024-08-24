@@ -1,25 +1,10 @@
 import styled from '@emotion/styled';
 
 import color from '../../../styles/color';
+import { BatteryFillProps } from '../../../types/types';
+import { getColor } from '../../../utils/getColor';
 
-// 임시 코드 - 인터페이스 분리와 getColor 함수 모듈화 필요
-interface BatteryFillProps {
-  residualRatio?: string;
-}
-
-const getColor = (residualRatio: string | undefined) => {
-  if (!residualRatio) return color.PRIMARY;
-
-  const residualRatioValue = parseFloat(residualRatio);
-
-  if (residualRatioValue > 20) {
-    return color.PRIMARY;
-  } else {
-    return color.RED;
-  }
-};
-
-export const StyledStationInfo = styled.div<BatteryFillProps>`
+export const styledStationInfo = styled.div<BatteryFillProps>`
   width: 360px;
   height: 240px;
   display: flex;

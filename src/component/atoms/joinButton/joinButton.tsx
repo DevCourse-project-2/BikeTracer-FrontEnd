@@ -1,11 +1,9 @@
-import { FC } from 'react';
+import * as S from './joinButton.style';
 
-import { StyledJoinButton } from './joinButton.style';
-
-const JoinButton: FC = () => {
+const JoinButton = () => {
   return (
     <>
-      <StyledJoinButton>회원가입</StyledJoinButton>
+      <S.styledJoinButton>회원가입</S.styledJoinButton>
     </>
   );
 };

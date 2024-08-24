@@ -1,11 +1,9 @@
-import { FC } from 'react';
+import * as S from './loginButton.style';
 
-import { StyledLoginButton } from './loginButton.style';
-
-const LoginButton: FC = () => {
+const LoginButton = () => {
   return (
     <>
-      <StyledLoginButton>로그인</StyledLoginButton>
+      <S.styledLoginButton>로그인</S.styledLoginButton>
     </>
   );
 };

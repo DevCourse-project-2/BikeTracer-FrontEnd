@@ -1,15 +1,13 @@
-import { FC } from 'react';
+import * as S from './searchBar.style';
 
-import { AlarmButton, MenuButton, SearchBarDiv, SearchText } from './searchBar.style';
-
-const SearchBar: FC = () => {
+const SearchBar = () => {
   return (
     <>
-      <SearchBarDiv>
-        <SearchText placeholder="장소를 입력해주세요" />
-        <AlarmButton />
-        <MenuButton />
-      </SearchBarDiv>
+      <S.searchBarDiv>
+        <S.searchText placeholder="장소를 입력해주세요" />
+        <S.alarmButton />
+        <S.menuButton />
+      </S.searchBarDiv>
     </>
   );
 };

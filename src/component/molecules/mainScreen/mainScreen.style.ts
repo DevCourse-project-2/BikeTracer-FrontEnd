@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const MapContainer = styled.div`
+export const mapContainer = styled.div`
   position: relative;
   top: 0;
   left: 50%;
@@ -9,7 +9,7 @@ export const MapContainer = styled.div`
   height: 760px;
 `;
 
-export const ModalOnOverlay = styled.div`
+export const modalOnOverlay = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -20,7 +20,7 @@ export const ModalOnOverlay = styled.div`
   backdrop-filter: blur(3px);
 `;
 
-export const SearchBarDiv = styled.div`
+export const searchBarDiv = styled.div`
   position: absolute;
   top: 24px;
   left: 50%;
@@ -28,7 +28,7 @@ export const SearchBarDiv = styled.div`
   z-index: 10;
 `;
 
-export const MapBoxDiv = styled.div`
+export const mapBoxDiv = styled.div`
   position: absolute;
   top: 0;
   left: 50%;
@@ -38,7 +38,7 @@ export const MapBoxDiv = styled.div`
   z-index: 1;
 `;
 
-export const InfoModal = styled.div`
+export const infoModal = styled.div`
   position: absolute;
   bottom: 0;
   left: 50%;

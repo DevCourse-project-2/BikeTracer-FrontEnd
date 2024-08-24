@@ -1,16 +1,6 @@
-import { FC } from 'react';
+import * as S from './bicycleInfo.styled';
 
-import {
-  BicycleDetails,
-  BicycleImage,
-  BicycleRate,
-  BicycleRateText,
-  SparkleImage,
-  StationTitle,
-  StyledBicycleInfo,
-} from './bicycleInfo.styled';
-
-const BicycleInfo: FC = () => {
+const BicycleInfo = () => {
   // 대여소 정보를 전역 store에서 받아 사용
   const selectedStation = {
     num: 305,
@@ -22,18 +12,18 @@ const BicycleInfo: FC = () => {
 
   return (
     <>
-      <StyledBicycleInfo>
-        <BicycleImage src="/pwa-512x512.png" alt="Bicycle" />
-        <BicycleDetails>
-          <StationTitle>{stationTitle}</StationTitle>
-          <BicycleRate>
-            <SparkleImage src="/sparkling-fill.png" />
-            <BicycleRateText residualRatio={selectedStation.residualRatio}>
+      <S.styledBicycleInfo>
+        <S.bicycleImage src="/pwa-512x512.png" alt="Bicycle" />
+        <S.bicycleDetails>
+          <S.stationTitle>{stationTitle}</S.stationTitle>
+          <S.bicycleRate>
+            <S.sparkleImage src="/sparkling-fill.png" />
+            <S.bicycleRateText residualRatio={selectedStation.residualRatio}>
               잔여율 {selectedStation.residualRatio}
-            </BicycleRateText>
-          </BicycleRate>
-        </BicycleDetails>
-      </StyledBicycleInfo>
+            </S.bicycleRateText>
+          </S.bicycleRate>
+        </S.bicycleDetails>
+      </S.styledBicycleInfo>
     </>
   );
 };

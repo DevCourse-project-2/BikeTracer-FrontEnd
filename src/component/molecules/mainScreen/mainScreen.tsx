@@ -1,32 +1,30 @@
 // eslint-disable-next-line simple-import-sort/imports
-import { FC } from 'react';
-
-import { InfoModal, MapBoxDiv, MapContainer, ModalOnOverlay, SearchBarDiv } from './mainScreen.style';
+import * as S from './mainScreen.style';
 import MapBox from '../../atoms/mapBox/mapBox';
-import IsLoginInfo from '../isLoginModal/isLoginInfo';
+import IsLoginInfo from '../isLoginInfo/isLoginInfo';
 import SearchBar from '../searchBar/searchBar';
 import StationInfo from '../stationInfo/stationInfo';
 
-const MainScreen: FC = () => {
+const MainScreen = () => {
   // 임시 코드 - zustand modal store 설정 필요
   const stationInfoModal = false;
   const isHaveUserInfo = false;
 
   return (
     <>
-      <MapContainer>
-        {isHaveUserInfo ? null : <ModalOnOverlay />}
-        <SearchBarDiv>
+      <S.mapContainer>
+        {isHaveUserInfo ? null : <S.modalOnOverlay />}
+        <S.searchBarDiv>
           <SearchBar />
-        </SearchBarDiv>
-        <MapBoxDiv>
+        </S.searchBarDiv>
+        <S.mapBoxDiv>
           <MapBox />
-        </MapBoxDiv>
-      </MapContainer>
-      <InfoModal>
+        </S.mapBoxDiv>
+      </S.mapContainer>
+      <S.infoModal>
         {isHaveUserInfo ? null : <IsLoginInfo />}
         {stationInfoModal ? <StationInfo /> : null}
-      </InfoModal>
+      </S.infoModal>
     </>
   );
 };

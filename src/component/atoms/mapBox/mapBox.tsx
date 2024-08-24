@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 declare global {
   interface Window {
@@ -6,7 +6,7 @@ declare global {
   }
 }
 
-const MapBox: FC = () => {
+const MapBox = () => {
   const [map, setMap] = useState<any>();
   const [markers, setMarkers] = useState<any>([]);
 
@@ -22,12 +22,11 @@ const MapBox: FC = () => {
         const container = document.getElementById('map');
         const options = {
           center: new window.kakao.maps.LatLng(37.5665, 126.978),
-          level: 3, // 확대 레벨
+          level: 3,
         };
 
-        const newMap = new window.kakao.maps.Map(container, options); // 지도 생성
+        const newMap = new window.kakao.maps.Map(container, options);
 
-        // 커스텀 마커 이미지 설정
         const customMarkerImage = new window.kakao.maps.MarkerImage(
           '/Vector-basic.png',
           new window.kakao.maps.Size(40, 50),
@@ -36,7 +35,7 @@ const MapBox: FC = () => {
           }
         );
 
-        // 선택 시 표시할 마커 이미지 설정
+        // 임시 코드 - 선택 시 표시할 마커 이미지 설정, 이후 분리 필요
         const selectMarkerImage = new window.kakao.maps.MarkerImage(
           '/Vector-select.png',
           new window.kakao.maps.Size(40, 50),
@@ -45,7 +44,6 @@ const MapBox: FC = () => {
           }
         );
 
-        // 마커 추가
         const positions = [
           new window.kakao.maps.LatLng(37.5665, 126.978),
           new window.kakao.maps.LatLng(33.450579, 126.56956),
