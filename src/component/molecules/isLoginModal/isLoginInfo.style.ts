@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import color from '../../../styles/color';
 import typo from '../../../styles/typo';
 
-export const StyledIsLoginInfo = styled.div`
+export const styledIsLoginInfo = styled.div`
   width: 360px;
   height: 180px;
   display: flex;
@@ -18,20 +18,20 @@ export const StyledIsLoginInfo = styled.div`
   z-index: 3;
 `;
 
-export const TextDiv = styled.div`
-  width: 300px;
+export const textDiv = styled.div`
+  width: 310px;
   display: auto;
 `;
 
-export const TitleText = styled.div`
+export const titleText = styled.div`
   font: ${typo.Main.SemiBold};
 `;
-export const DetailText = styled.div`
+export const detailText = styled.div`
   font: ${typo.Main.Caption.SemiBold};
 `;
 
-export const ButtonDiv = styled.div`
+export const buttonDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 5%;
+  gap: 12px;
 `;
