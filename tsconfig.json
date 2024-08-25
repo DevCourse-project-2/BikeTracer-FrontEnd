@@ -1,7 +1,19 @@
 {
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["@storybook/react"]
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
+  ],
+  "include": ["../src/**/*"],
+  "exclude": [
+    "./src/**/*.stories.*",
+    "./.storybook/**/*"
   ]
 }

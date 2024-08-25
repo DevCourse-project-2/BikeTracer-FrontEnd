@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
-import {VitePWA, VitePWAOptions} from 'vite-plugin-pwa'
+import react from '@vitejs/plugin-react-swc';
+import { defineConfig } from 'vite';
+import { VitePWA, VitePWAOptions } from 'vite-plugin-pwa';
 
 export default defineConfig({
   plugins: [
@@ -8,8 +8,8 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       devOptions: {
-        enabled: true
-      }
-    } as VitePWAOptions)
+        enabled: true,
+      },
+    } as VitePWAOptions),
   ],
-})
+});
